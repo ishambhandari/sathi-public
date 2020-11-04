@@ -1,0 +1,6 @@
+#ignoring settings and other configs
+settings.py
+manage.py
+wsgi.py
+asgi.py
+sathienv

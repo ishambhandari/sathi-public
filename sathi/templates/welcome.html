@@ -1,0 +1,13 @@
+{% block content %}
+Welcome {{ Email }}
+<style>
+    div{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+</style>
+<div>
+<button type='button' onclick="location.href = '{% url 'userlogout' %}'"> Logout </button>
+</div>
+{% endblock %}

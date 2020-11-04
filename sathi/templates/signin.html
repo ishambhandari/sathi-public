@@ -1,0 +1,21 @@
+{% block content %}
+{% if message%}
+<script>
+    alert('{{ message }}'); 
+</script>
+{% endif %}
+<form action="/welcome/" method="post">
+    {% csrf_token %}
+    Email:
+    <input type="email" name="email">
+    Password:
+    <input type="password" name="password">
+    <input type="submit" value="Signin">   
+</form>
+
+<p>
+    {{ name }}
+</p>
+
+{% endblock %}
+
